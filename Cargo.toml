@@ -1,0 +1,25 @@
+[package]
+name = "rushdown-icons"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Draw named icons in a rushdown document as inline SVG from four icon sets."
+license = "MIT"
+repository = "https://github.com/NicolasChagnet/rushdown-icons"
+keywords = ["icons", "markdown", "svg", "lucide"]
+categories = ["text-processing", "graphics"]
+documentation = "https://docs.rs/rushdown-icons"
+
+[features]
+default = []
+fontawesome = ["dep:fontawesome-free-pack"]
+
+[dependencies]
+fontawesome-free-pack = { version = "7.3.1", optional = true }
+lucide-static-svg = "1.55.0"
+octicons-pack = "19.38.0"
+rushdown = "0.18.0"
+simple-icons = "0.1.1"
+
+[dev-dependencies]
+rushdown-emoji = "0.9.8"
